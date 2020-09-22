@@ -1,6 +1,8 @@
 using UnityEngine;
- 
- IEnumerator screenshot()
+
+ public class ScreenShot : MonoBehaviour
+ {
+    IEnumerator screenshot()
     {
         //↓コレ大事
         yield return new WaitForEndOfFrame();
@@ -10,3 +12,4 @@ using UnityEngine;
         texture.Apply();
         yield break;
     }
+ }
